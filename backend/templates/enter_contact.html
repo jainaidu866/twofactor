@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html><body>
+<h2>Enter your email for OTP verification</h2>
+<form method="POST">
+    <input name="contact" type="email" placeholder="email" required>
+    <button type="submit">Send OTP</button>
+</form>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul>{% for message in messages %}<li>{{ message }}</li>{% endfor %}</ul>
+  {% endif %}
+{% endwith %}
+</body></html>

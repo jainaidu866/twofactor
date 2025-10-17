@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html><body>
+<h2>Scan this QR code with your authenticator app:</h2>
+<img src="data:image/png;base64,{{ img_b64 }}" alt="Scan QR">
+<form method="POST" action="/enable_2fa">
+    <button type="submit">Enable 2FA</button>
+</form>
+<p>QR code will refresh every minute. If expired, reload this page.</p>
+</body></html>

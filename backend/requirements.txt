@@ -1,0 +1,4 @@
+Flask
+PyOTP
+mysql-connector-python
+bcrypt
